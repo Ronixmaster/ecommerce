@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">A-2-Z Shooping</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="file:///C:/work/activity.html">Shopping</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="file:///C:/work/clothes.html">Clothes</a></li>
+                            <li><a class="dropdown-item" href="file:///C:/work/electronic.html">Electronic</a></li>
+                            <li><a class="dropdown-item" href="file:///C:/work/other.html">Other</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link skills" aria-current="page" href="file:///C:/work/skill.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link skills" aria-current="page" href="file:///C:/work/contect.html">Contect Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                    <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal"
+                        data-bs-target="#example1Modal">SignUp</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--login Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-secondary">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login To A-2-Z Shopping</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--signup Modal -->
+    <div class="modal fade" id="example1Modal" tabindex="-1" aria-labelledby="example1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-secondary">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Registration On A-2-Z Shopping</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Full Name</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <label for="exampleInputEmail1" class="form-label py-1">Where Are You From?</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="1">Gujarat</option>
+                            <option value="2">Banglore</option>
+                            <option value="3">Rajsthan</option>
+                            <option value="1">TamilNadu</option>
+                            <option value="2">Bihar</option>
+                            <option value="3">Haryana</option>
+                          </select>
+
+                          <label for="exampleInputEmail1" class="form-label my-2">Are Your 18+ ?</label>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Yes
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              No
+                            </label>
+                          </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label my-2">E-mail Address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner my-4">
+                <div class="carousel-item active bg-primary">
+                    <img src="C:\projectimage\back3.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Well-come To Our Page</h3>
+                        <p>Wellcome To A-2-Z Shopping. We provide best service for our consumer.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="C:\projectimage\back5.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>A-2-Z Shopping Center</h3>
+                        <p>Yore Happiness Is Our Service.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="C:\projectimage\tshirt2.jfif" class="bd-placeholder-img rounded-circle" width="140"
+                    height="140" alt="">
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                <h2 class="fw-normal">M.R.P. 179</h2>
+                <p>Some representative placeholder content for the three columns of text below the carousel. This is the
+                    first column.</p>
+                <p><a class="btn btn-primary" href="#">Buy Now »</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img src="C:\projectimage\g1.jfif" class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    alt="">
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                <h2 class="fw-normal">M.R.P. 99</h2>
+                <p>Some representative placeholder content for the three columns of text below the carousel. This is the
+                    first column.</p>
+                <p><a class="btn btn-primary" href="#">Buy Now »</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img src="C:\projectimage\t3.jfif" class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    alt="">
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                <h2 class="fw-normal">M.R.P. 219</h2>
+                <p>Some representative placeholder content for the three columns of text below the carousel. This is the
+                    first column.</p>
+                <p><a class="btn btn-primary" href="#">Buy Now »</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img src="C:\projectimage\t4.jfif" class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    alt="">
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                <h2 class="fw-normal">M.R.P. 210</h2>
+                <p>Some representative placeholder content for the three columns of text below the carousel. This is the
+                    first column.</p>
+                <p><a class="btn btn-primary" href="#">Buy Now »</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img src="C:\projectimage\t5.jfif" class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    alt="">
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                <h2 class="fw-normal">M.R.P. 199</h2>
+                <p>Some representative placeholder content for the three columns of text below the carousel. This is the
+                    first column.</p>
+                <p><a class="btn btn-primary" href="#">Buy Now »</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img src="C:\projectimage\t6.jfif" class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    alt="">
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                <h2 class="fw-normal">M.R.P. 139</h2>
+                <p>Some representative placeholder content for the three columns of text below the carousel. This is the
+                    first column.</p>
+                <p><a class="btn btn-primary" href="#">Buy Now »</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img src="C:\projectimage\t7.jfif" class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    alt="">
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                <h2 class="fw-normal">M.R.P. 149</h2>
+                <p>Some representative placeholder content for the three columns of text below the carousel. This is the
+                    first column.</p>
+                <p><a class="btn btn-primary" href="#">Buy Now »</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img src="C:\projectimage\tshirt1.jfif" class="bd-placeholder-img rounded-circle" width="140"
+                    height="140" alt="">
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                <h2 class="fw-normal">M.R.P. 99</h2>
+                <p>Some representative placeholder content for the three columns of text below the carousel. This is the
+                    first column.</p>
+                <p><a class="btn btn-primary" href="#">Buy Now »</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img src="C:\projectimage\tshirt2.jfif" class="bd-placeholder-img rounded-circle" width="140"
+                    height="140" alt="">
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                <h2 class="fw-normal">M.R.P. 119</h2>
+                <p>Some representative placeholder content for the three columns of text below the carousel. This is the
+                    first column.</p>
+                <p><a class="btn btn-primary" href="#">Buy Now »</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="d-flex align-item-center justify-content-center">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#">Previous</a>
+                </li>
+                <li class="page-item active" aria-current="page">
+                    <span class="page-link">1</span>
+                </li>
+                <li class="page-item"><a class="page-link" href="file:///C:/work/activity.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="file:///C:/work/skill.html">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="file:///C:/work/activity.html">Next</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card text-center">
+        <div class="card-header">
+            <h3>Terms And Condition..</h3>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">24 X 7 Customer Support.- 01122 01122</h5>
+            <p class="card-text">Your Happiness Is Our Service. Make Your Shopping Memorable.</p>
+            <a href="#" class="btn btn-primary">Visit Headquater »</a>
+        </div>
+        <div class="card-footer text-body-secondary">
+            <h4>Thanks For Visiting</h4>
+        </div>
+    </div>
+
+</body>
+
+</html>
